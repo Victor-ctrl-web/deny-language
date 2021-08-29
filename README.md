@@ -1,4 +1,4 @@
-# deny-language
+# DenyLanguage
 Uma ferramenta capaz de identificar mais de 100 expletívos japoneses em uma música.
 Insira a letra da música na caixa de texto e clique em "Analisar".
 O resultado exibirá uma mensagem listando apenas as categorias de expletívos contidos na letra da música.
