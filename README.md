@@ -8,6 +8,6 @@ Palavras que remetem nome de orgãos sexuais, fluídos orgânicos, verbos e adje
 ###### Conteúdo obscuro
 Substantivos que remetem criaturas sobrenaturais e culturas depravantes.
 ###### Apóstrofes parciais
-Substantivos e adjetivos ofendem características físicas, intelecto e condição financeira.
+Substantivos e adjetivos que destacam características físicas, intelecto e condição financeira.
 ###### Imperativos ameaçadores
 Frases curtas e verbos imperativos onde há a intenção de intimidar e ameaçar.
