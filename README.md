@@ -11,3 +11,4 @@ Substantivos que remetem criaturas sobrenaturais e culturas depravantes.
 Substantivos e adjetivos que destacam características físicas, intelecto e condição financeira.
 ###### Imperativos ameaçadores
 Frases curtas e verbos imperativos onde há a intenção de intimidar e ameaçar.
+# Um aviso aos santos, não leiam o código-fonte.
