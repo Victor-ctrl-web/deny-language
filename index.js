@@ -1,10 +1,10 @@
 var w_kotoba = [
-    ["Chin Chin", "ちんちん", "Kintama", "金玉", "Bobo", "ぼぼ", "Ketsu", "ケツ", "Ketusnoana", "Chikubi", "乳首", "Oppai", "おっぱい", "Paipai", "ぱいぱい", "Oshikko", "おしっこ", "Ochinchin", "おちんちん", "Chinko", "ちんこ", "Chinpo", "チンポ", "Pokochin", "ポコチン", "Oppai", "おっぱい", "Tamatama", "たまたま", "Manko", "まんこ", "Okasu", "犯す", "Komasu", "こます", "Itekomasu", "いてこます", "Kamawohoru", "かまをほる", "Kuso", "糞", "Kusotare", "クソタレ", "Unko", "うんこ", "Shikko", "しっこ", "Konchikushou ", "こん畜生", "Chikushou", "畜生", "Okama", "おかま", "Yariman", "やりまん", "Kemuri", "煙", "シガレット", "Shigaretto", "喫煙者", "Kitsuen-sha", "Nomu", "飲む", "酔っ払い", "Yopparai", "薬漬け", "Yakudzuke", "薬物", "Yakubutsu", "死ぬ", "Kuso", "糞", "Kusotare", "クソタレ", "Unko", "うんこ", "Shikko", "しっこ", "Hentai", "変態"],
-    ["Bakemono", "化け物", "Akuma", "悪魔", "Oni", "鬼", "Majyo", "魔女", "Obake", "おばけ", "Miira", "ミイラ", "Hidoi", "酷い", "メイジ", "Meiji", "ソーサラー", "Sosara", "魔女", "Majo", "ドルイド", "Doruido"],
+    ["Chin Chin", "ちんちん", "Kintama", "金玉", "Bobo", "ぼぼ", "Ketsu", "ケツ", "Ketusnoana", "Chikubi", "乳首", "Oppai", "おっぱい", "Paipai", "ぱいぱい", "Oshikko", "おしっこ", "Ochinchin", "おちんちん", "Chinko", "ちんこ", "Chinpo", "チンポ", "Pokochin", "ポコチン", "Oppai", "おっぱい", "Tamatama", "たまたま", "Manko", "まんこ", "Okasu", "犯す", "Komasu", "こます", "Itekomasu", "いてこます", "Kamawohoru", "かまをほる", "Kuso", "糞", "Kusotare", "クソタレ", "Unko", "うんこ", "Shikko", "しっこ", "Konchikushou ", "こん畜生", "Chikushou", "畜生", "Okama", "おかま", "Yariman", "やりまん", "酔っ払い", "Yopparai", "薬漬け", "Yakudzuke", "薬物", "Yakubutsu", "死ぬ", "Kuso", "糞", "Kusotare", "クソタレ", "Unko", "うんこ", "Shikko", "しっこ", "Hentai", "変態"],
+    ["Bakemono", "化け物", "Akuma", "悪魔", "Oni", "鬼", "Majyo", "魔女", "Obake", "おばけ", "Miira", "ミイラ", "Hidoi", "酷い", "メイジ", "Meiji", "ソーサラー", "Sosara", "魔女", "Majo", "ドルイド", "Doruido", "アンデッド", "Andeddo", "ゾンビ", "Zonbi", "グール", "Gūru", "サタン", "Satan", "幽霊", "Yūrei", "魂", "Tamashī", "精霊", "Seirei", "人食い", "Tomogui", "Hito-gui", "凶悪性" , "Kyōaku-sei", "小児性愛者", "Shōniseiai-sha"],
     ["Baka", "馬鹿", "Otankonasu", "おたんこなす", "Aho", "あほ", "Kusottare", "クソッタレ", "Manuke", "間抜け", "Heta", "Hetakuso", "下手糞", "Doji", "どじ", "Bontsuke", "ぽんつく", "Roba", "驢馬", "Usagiuma", "兎馬", "Arokamono", "愚か者", "Funeke", "腑抜け", "Gubetsu", "愚物", "Oko", "おこ", "Dobeta", "ど下手", "Doinaka", "ど田舎", "Donbyakushou", "どん百姓"],
     ["Damatte", "黙って", "Damare", "黙れ", "Shine", "死ね", "Urusai", "うるさい", "Ikke-nai", "Ikke-naine", "いっけ-ない", "Kutabare", "くたばれ", "Deteike", "出て行け", "Bakanisuruna", "ばかにするな", "Hikome", "ひっこめ", "Namekusatte", "なめくさって"]
 ];
-var not_kotoba = ["Ugokasu", "Okane"];
+var not_kotoba = ["Ugokasu", "動かす", "Okane", "お金", "Doko", "どこ", "Koko", "ここ", "Damatte inai de sa", "黙っていないでさ", "Aonisai", "青二才", "yorokonda", "yorokonde", "喜んで", "Hitokoe", "一声"];
 
 function ScanLyrics() {
     document.getElementById("kt").innerHTML = "";
@@ -23,6 +23,7 @@ function ScanLyrics() {
         for (c = 0; c < w_kotoba[z].length; c++) {
             if (lyrics.search(w_kotoba[z][c].toUpperCase()) > -1) {
                 kt++;
+				console.log(w_kotoba[z][c]);
                 if (z == 0) {
                     kt1++;
                 } else if (z == 1) {
@@ -35,7 +36,7 @@ function ScanLyrics() {
             }
             if (c < not_kotoba.length) {
                 if (lyrics.search(not_kotoba[c].toUpperCase()) > -1) {
-                    kt[0]--;
+                    kt--;
                 }
             }
         }
